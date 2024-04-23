@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB Teste FireBase</Base></title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+
+</head>
+
+    <body>
+        <h1>Cadastro de alunos!</h1>
+
+        <div class="content">
+                <form id="add-aluno-form">
+    
+                    <input type="text" name="titulo" id="titulo" placeholder="Digite o Titulo do livro">
+                    <input type="text" name="autor" id="autor" placeholder="Digite o nome do autor">
+                    <button>CADASTRAR</button>
+    
+                </form>
+    
+                <ul id="aluno-list"></ul>
+            </div>
+
+    </body>
+
+    <!-- IMPORT DO SDK DO FIREBASE -->
+    <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-app.js"></script>
+
+    <!-- IMPORT DO SDK DO FIRESTORE -->
+    <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-firestore.js"></script>
+
+    <!-- Dados de acesso ao firebase  -->
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyCk1PYXvaECW3tvHWY3m9_diGsP5497GRw",
+            authDomain: "bd3-nosql-atv5.firebaseapp.com",
+            projectId: "bd3-nosql-atv5",
+            storageBucket: "bd3-nosql-atv5.appspot.com",
+            messagingSenderId: "85827289888",
+            appId: "1:85827289888:web:6761180f50252d2f370d45",
+            measurementId: "G-WTGW2GQ1CM"
+          };
+
+        /*Inicia o firebase*/
+
+        firebase.initializeApp(firebaseConfig);
+        /*Inicia o firestore database*/
+        const db = firebase.firestore();
+
+        /*Teste de conexão com o database*/
+        console.log(db);
+    </script>
+
+    <script src="js/script.js"></script>
+
+</html>
