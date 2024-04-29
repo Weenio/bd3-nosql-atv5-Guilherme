@@ -26,6 +26,7 @@ function renderList(doc){
     let excluir         = document.createElement("div")
 
     excluir.textContent = "X"
+    excluir.setAttribute("class", "exButton")
     list.setAttribute('data-id', doc.id)
 
     nome.textContent            = doc.data().nome
@@ -37,6 +38,7 @@ function renderList(doc){
     email.textContent           = doc.data().email
     dataNasc.textContent        = doc.data().dataNasc
     
+    list.appendChild(excluir)
     list.appendChild(nome)
     list.appendChild(turma)
     list.appendChild(cpf)
@@ -45,9 +47,6 @@ function renderList(doc){
     list.appendChild(telefoneRes)
     list.appendChild(email)
     list.appendChild(dataNasc)
-
-
-    list.appendChild(excluir)
 
     livroList.appendChild(list)
 

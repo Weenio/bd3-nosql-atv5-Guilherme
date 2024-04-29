@@ -5,24 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WEB Teste FireBase</Base></title>
-    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <link rel="stylesheet" href="css/styles.css">
 
 </head>
 
     <body>
-        <h1>Cadastro de alunos!</h1>
+        <nav class="navBar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+                <li><a href="listagemAluno.html">Listagem de Alunos</a></li>
+            </ul>
+        </nav>
 
         <div class="content">
-                <form id="add-aluno-form">
-    
-                    <input type="text" name="titulo" id="titulo" placeholder="Digite o Titulo do livro">
-                    <input type="text" name="autor" id="autor" placeholder="Digite o nome do autor">
-                    <button>CADASTRAR</button>
-    
-                </form>
-    
-                <ul id="aluno-list"></ul>
-            </div>
+            <form class="card"id="add-aluno-form">
+                <h1>Cadastro de alunos!</h1>
+                <input type="text" name="nome" id="nome" placeholder="Nome do Aluno">
+                <select name="turma" id="turma" placeholder="Selecione a turma do aluno">
+                    <option value="1">1°DSN</option>
+                    <option value="2">2°DSN</option>
+                    <option value="3">3°DSN</option>
+                </select>
+                <input type="text" name="cpf" id="cpf" placeholder="CPF do aluno">
+                <input type="text" name="rg" id="rg" placeholder="RG do aluno">
+                <input type="tel" name="telefoneAluno" id="telefoneAluno" placeholder="Telefone do Aluno">
+                <input type="tel" name="telefoneRes" id="telefoneRes" placeholder="Telefone do Responsável">
+                <input type="email" name="email" id="email" placeholder="Email do Aluno">
+                <input type="date" name="dataNasc" id="dataNasc" placeholder="data de nascimento">
+                <button>CADASTRAR</button>
+ 
+            </form>
+        </div>
 
     </body>
 

@@ -1,0 +1,101 @@
+body{
+    background: #999;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.content {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width:auto;
+    padding: 20px;
+    border: 3px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cardSpam li{
+    width: 20em;
+    word-break: break-all;
+    background-color: #b2e3ff;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.cardSpam li{
+    margin-bottom: 1em;
+}
+
+.exButton{
+    width: 20px;
+    height: 20px;
+    justify-content: center;
+    display: flex;
+    align-items:flex-end;
+    background-color: rgb(221, 221, 221);
+    border-radius: 10px;
+    float: right;
+}
+
+.navBar {
+    background: linear-gradient(125deg, rgba(255,255,255,1) 0%, rgba(204,204,204,1) 45%, rgba(153,153,153,1) 100%);
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    border-radius: 10px;
+    margin: 1em;
+    height: 2em;
+    padding: 1em;
+}
+
+.navBar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    padding: 0.4em;
+}
+
+.navBar ul li a {
+    background: linear-gradient(315deg, rgba(255,255,255,1) 0%, rgba(204,204,204,1) 45%, rgba(153,153,153,1) 100%);
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    border-radius: 50px;
+    height: 5em;
+    padding: 1em;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 10px; /* Adiciona margem horizontal entre os itens */
+}
+
+input, select, button{
+    margin: 5px 0 5px 0;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+span {
+    display: flex;
+    flex-direction: column;
+    align-items:baseline;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
